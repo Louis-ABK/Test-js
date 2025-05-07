@@ -5,3 +5,8 @@ body {
 button { 
     margin: 5px; padding: 10px;
 }
+input {
+    border-style: none;
+    height: 80%;
+    width: 25%;
+}

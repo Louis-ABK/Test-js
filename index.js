@@ -68,9 +68,9 @@ let fetchBtn = document.getElementById("fetchBtn")
 fetchBtn.addEventListener("click", () => {
     fetch("https://jsonplaceholder.typicode.com/posts/1")
       .then(response => response.json())
-      .then(data => alert("Titre : " + data.title))
-      .catch(error => alert("Erreur : " + error));
+      .then(data => console.log("Titre : " + data.title))
+      .catch(error => console.log("Erreur : " + error));
 });
 
-//La programmation asynchrone permet d'exécuter des tâches sans bloquer le reste du programme 
+//La programmation asynchrone permet d'exécuter des tâches sans bloquer le reste du programme.
 // JSON pour JavaScript Object Notation est un format leger d’echange de donnees, base sur la syntaxe des objets JS.
