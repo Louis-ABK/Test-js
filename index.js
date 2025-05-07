@@ -1,4 +1,4 @@
-//preventdefaut me permet d'empecher le rechargement de mon formulaire lors de son envois
+//Le preventdefaut me permet d'empecher le rechargement de mon formulaire lors de son envois
 //C’est une methode qui empeche le comportement par defaut d’un evenement
 let formulaire = document.getElementById("formulaire");
 formulaire.addEventListener("submit", function (event) {
