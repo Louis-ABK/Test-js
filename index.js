@@ -17,17 +17,15 @@ timeoutBtn.addEventListener("click", () => {
 // le localStorage permet de stoquer de facon persistante les informations
 let stockageBtn = document.querySelector("#stockageBtn");
 let input = document.querySelector("input");
-let valeur = input.value
 stockageBtn.addEventListener("click", () => {
-    localStorage.setItem("saisie", $(valeur));
+    localStorage.setItem("saisie", input.value);
     console.log("L'element saise est "+localStorage.getItem("saisie")+" et il est stoque. (localStorage)");
 });
 //le sessionStorage permet de stoquer les informations de facon temporaire
 let stockageBtn1 = document.querySelector("#stockageBtn1");
 stockageBtn1.addEventListener("click", () => {
     let input = document.querySelector("input");
-    let valeur = input.value
-    localStorage.setItem("saisie", $(valeur));
+    localStorage.setItem("saisie", input.value);
     console.log("L'element saise est "+localStorage.getItem("saisie")+" et il est stoque. (sessionStorage)");
 });
 
